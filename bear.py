@@ -86,9 +86,9 @@ if st.session_state.priorities is None:
 if st.session_state.remaining_shield is None and st.session_state.priorities is not None:
     with st.form("initial_form"):
         st.write("最初の兵士数を入力してください")
-        shield = st.number_input("盾兵の数", min_value=0, step=1, value=415630)
-        spear = st.number_input("槍兵の数", min_value=0, step=1, value=324233)
-        archer = st.number_input("弓兵の数", min_value=0, step=1, value=369777)
+        shield = st.number_input("盾兵の数", min_value=0, step=1, value=484009)
+        spear = st.number_input("槍兵の数", min_value=0, step=1, value=355194)
+        archer = st.number_input("弓兵の数", min_value=0, step=1, value=422045)
         submit_initial = st.form_submit_button("開始")
     if submit_initial:
         st.session_state.remaining_shield = shield
@@ -100,9 +100,9 @@ if st.session_state.remaining_shield is not None:
     with st.form("input_form"):
         st.write("現在の部隊を編成する割合を入力してください")
         shield_ratio = st.number_input("盾兵の割合 (%)", min_value=0, max_value=100, step=1, value=10)
-        spear_ratio = st.number_input("槍兵の割合 (%)", min_value=0, max_value=100, step=1, value=10)
-        archer_ratio = st.number_input("弓兵の割合 (%)", min_value=0, max_value=100, step=1, value=80)
-        capacity = st.number_input("出征容量 (1部隊あたりの最大兵士数)", min_value=1, step=1, value=144310)
+        spear_ratio = st.number_input("槍兵の割合 (%)", min_value=0, max_value=100, step=1, value=20)
+        archer_ratio = st.number_input("弓兵の割合 (%)", min_value=0, max_value=100, step=1, value=70)
+        capacity = st.number_input("出征容量 (1部隊あたりの最大兵士数)", min_value=1, step=1, value=151710)
 
         submit = st.form_submit_button("部隊を編成")
 
