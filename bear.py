@@ -86,9 +86,9 @@ if st.session_state.priorities is None:
 if st.session_state.remaining_shield is None and st.session_state.priorities is not None:
     with st.form("initial_form"):
         st.write("最初の兵士数を入力してください")
-        shield = st.number_input("盾兵の数", min_value=0, step=1, value=484009)
-        spear = st.number_input("槍兵の数", min_value=0, step=1, value=355194)
-        archer = st.number_input("弓兵の数", min_value=0, step=1, value=422045)
+        shield = st.number_input("盾兵の数", min_value=0, step=1, value=484034)
+        spear = st.number_input("槍兵の数", min_value=0, step=1, value=355219)
+        archer = st.number_input("弓兵の数", min_value=0, step=1, value=422070)
         submit_initial = st.form_submit_button("開始")
     if submit_initial:
         st.session_state.remaining_shield = shield
